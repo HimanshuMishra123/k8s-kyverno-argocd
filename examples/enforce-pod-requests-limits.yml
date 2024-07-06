@@ -16,7 +16,7 @@ metadata:
       This policy validates that all containers have something specified for memory and CPU
       requests and memory limits.
 spec:
-  validationFailureAction: enforce
+  validationFailureAction: enforce       #'Audit' when you want to log the non-compliant resource but not to stop from creating the pod
   background: true
   rules:
   - name: validate-resources
